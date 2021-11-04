@@ -1,0 +1,29 @@
+//breakpoints
+$sm: "576px";
+$md: "768px";
+$lg: "992px";
+$xl: "1200px";
+
+@media (min-width: $sm) { 
+    .task {
+        max-width: 90%;
+    }
+ }
+
+@media (min-width: $md) { 
+    .task {
+        max-width: 80%;
+    }
+ }
+
+@media (min-width: $lg) { 
+    .task {
+        max-width: 70%;
+    }
+ }
+
+@media (min-width: $xl) { 
+    .task {
+        max-width: 800px;
+    }
+ }
