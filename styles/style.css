@@ -137,11 +137,33 @@
   cursor: pointer;
 }
 
+.task .taskDelete::before {
+  content: 'X';
+}
+
 .task .taskDelete:hover {
   background-color: #048ABF;
   color: #FFFFFF;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .topbar {
@@ -201,10 +223,16 @@
   .task {
     max-width: 90%;
   }
+  .taskInput {
+    max-width: 90%;
+  }
 }
 
 @media (min-width: 768px) {
   .task {
+    max-width: 80%;
+  }
+  .taskInput {
     max-width: 80%;
   }
 }
@@ -213,10 +241,16 @@
   .task {
     max-width: 70%;
   }
+  .taskInput {
+    max-width: 70%;
+  }
 }
 
 @media (min-width: 1200px) {
   .task {
+    max-width: 800px;
+  }
+  .taskInput {
     max-width: 800px;
   }
 }

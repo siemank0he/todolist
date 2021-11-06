@@ -82,11 +82,24 @@ $white: #FFFFFF;
         font-weight: 600;
         cursor: pointer;
 
+        &::before {
+            content: 'X';
+        }
+
         &:hover {
             background-color: $lightBlue;
             color: $white;
             transition: .3s;
         }
     }
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
 
